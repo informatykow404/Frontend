@@ -9,7 +9,7 @@ import * as SplashScreen from "expo-splash-screen";
 import { useEffect, useState } from "react";
 import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
 import { useColorScheme } from "@/components/useColorScheme";
-import { Stack} from "expo-router";
+import { Stack } from "expo-router";
 
 import "../global.css";
 
@@ -26,7 +26,7 @@ export {
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
-export default function RootLayout() {
+function RootLayout() {
   const [loaded, error] = useFonts({
     SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
     ...FontAwesome.font,
@@ -59,15 +59,17 @@ function RootLayoutNav() {
   const colorScheme = useColorScheme();
 
   return (
-     <GluestackUIProvider mode={colorScheme === "dark" ? "dark" : "light"}>
-       <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
+    <GluestackUIProvider mode={colorScheme === "dark" ? "dark" : "light"}>
+      <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
         <Stack>
           <Stack.Screen name="index" options={{ headerShown: false }} />
-          <Stack.Screen name="(tabs)" options={{ headerShown: false }}/>
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           <Stack.Screen name="(auth)" options={{ headerShown: false }} />
-          <Stack.Screen name="+not-found" options={{ headerShown: false }}/>
+          <Stack.Screen name="+not-found" options={{ headerShown: false }} />
         </Stack>
-       </ThemeProvider>
-     </GluestackUIProvider>
+      </ThemeProvider>
+    </GluestackUIProvider>
   );
 }
+
+export default RootLayout;
