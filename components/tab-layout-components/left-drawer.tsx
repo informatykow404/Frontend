@@ -74,7 +74,7 @@ export default function LeftDrawer() {
               className="flex-1 bg-red-500"
               onPress={() => {
                 setShowDrawer(false);
-                router.replace("/"); // routing back isn't working for some reason
+                router.replace("/(auth)/sign-in"); // routing back isn't working for some reason
               }}
             >
               <ButtonText>Wyloguj</ButtonText>

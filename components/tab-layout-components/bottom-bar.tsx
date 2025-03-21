@@ -1,8 +1,6 @@
 import { useContext } from "react";
-import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
-
-import { TabContext } from "@/app/(tabs)/_layout";
-
+import { View, TouchableOpacity, Text } from "react-native";
+import { TabContext } from "@/contexts/TabContext";
 import { bottomBarStyles as styles } from "@/styles/TabLayoutStyles";
 
 export default function BottomBar() {

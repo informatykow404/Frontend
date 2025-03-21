@@ -1,13 +1,10 @@
 import { useContext } from "react";
 import { View } from "react-native";
 import PagerView from "react-native-pager-view";
-
 import MyUniversity from "../../components/tab-pages/my-university";
 import MyClubs from "../../components/tab-pages/my-clubs";
 import Home from "../../components/tab-pages/home";
-
-import { TabContext } from "@/app/(tabs)/_layout";
-
+import { TabContext } from "@/contexts/TabContext";
 import { tabsIndexStyles as styles } from "@/styles/TabLayoutStyles";
 
 export default function TabScreen() {
