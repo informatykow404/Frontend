@@ -1,7 +1,7 @@
 import { createContext, useContext } from "react";
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 import PagerView from "react-native-pager-view";
-import { bottomBarStyles as styles } from "@/styles/components/TabLayoutStyles";
+import { bottomBarStyles as styles } from "@/styles/TabLayoutStyles";
 
 export const TabContext = createContext({
   tab: 1,

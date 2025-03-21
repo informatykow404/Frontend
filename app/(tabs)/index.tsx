@@ -10,7 +10,7 @@ import TopBar from "@/components/tab-layout-components/top-bar";
 
 import { TabContext } from "@/components/tab-layout-components/bottom-bar";
 
-import { tabsIndexStyles as styles } from "@/styles/components/TabLayoutStyles";
+import { tabsIndexStyles as styles } from "@/styles/TabLayoutStyles";
 
 export default function TabScreen() {
   const [tab, setTab] = useState(1);

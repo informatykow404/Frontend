@@ -3,7 +3,7 @@ import { View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import LeftDrawer from "./left-drawer";
-import { topBarStyles as styles } from "@/styles/components/TabLayoutStyles";
+import { topBarStyles as styles } from "@/styles/TabLayoutStyles";
 
 export default function TopBar() {
   return (
