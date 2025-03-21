@@ -1,20 +1,12 @@
-import { createContext, useContext } from "react";
+import { useContext } from "react";
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
-import PagerView from "react-native-pager-view";
+
+import { TabContext } from "@/app/(tabs)/_layout";
+
 import { bottomBarStyles as styles } from "@/styles/TabLayoutStyles";
 
-export const TabContext = createContext({
-  tab: 1,
-  setTab: (index: number) => {},
-  pagerRef: { current: null } as React.RefObject<PagerView>,
-});
-
-export default function BottomBar({
-  pagerRef,
-}: {
-  pagerRef: React.RefObject<PagerView>;
-}) {
-  const { tab, setTab } = useContext(TabContext);
+export default function BottomBar() {
+  const { tab, setTab, pagerRef } = useContext(TabContext);
 
   const handlePress = (index: number) => {
     setTab(index);
