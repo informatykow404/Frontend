@@ -1,9 +1,9 @@
 import React from "react";
-import Gradient from "@/assets/Icons/Gradient";
-import DocumentData from "@/assets/Icons/DocumentData";
-import LightBulbPerson from "@/assets/Icons/LightbulbPerson";
-import Rocket from "@/assets/Icons/Rocket";
-import Logo from "@/assets/Icons/Logo";
+import Gradient from "@/assets/Icons/gradient";
+import DocumentData from "@/assets/Icons/document-data";
+import LightBulbPerson from "@/assets/Icons/lightbulb-person";
+import Rocket from "@/assets/Icons/rocket";
+import Logo from "@/assets/Icons/logo";
 import { Box } from "@/components/ui/box";
 import { ScrollView, View } from "react-native";
 import { Text } from "@/components/ui/text";

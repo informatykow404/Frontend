@@ -1,10 +1,8 @@
 import React from 'react';
-import {View, Text} from "react-native";
+import SignUpScreen from "@/components/auth/sign-up/sign-up-screen";
 
 export default function SignUp() {
     return (
-        <View>
-            <Text>Sign up works</Text>
-        </View>
+        <SignUpScreen />
     );
 }

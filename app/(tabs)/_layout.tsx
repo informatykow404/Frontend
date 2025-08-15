@@ -1,9 +1,9 @@
 import { Stack } from "expo-router";
-import TopBar from "@/components/tab-layout-components/top-bar";
-import BottomBar from "@/components/tab-layout-components/bottom-bar";
+import TopBar from "@/components/tab-layout-components/top-bar/top-bar";
+import BottomBar from "@/components/tab-layout-components/bottom-bar/bottom-bar";
 import { useRef, useState } from "react";
 import PagerView from "react-native-pager-view";
-import { TabContext } from "@/contexts/TabContext";
+import { TabContext } from "@/contexts/tab-context";
 
 export default function Layout() {
   const [tab, setTab] = useState(1);

@@ -2,8 +2,8 @@ import React from "react";
 import { View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-import LeftDrawer from "./left-drawer";
-import { topBarStyles as styles } from "@/styles/TabLayoutStyles";
+import LeftDrawer from "../left-drawer/left-drawer";
+import { styles } from "./styles"
 
 export default function TopBar() {
   return (

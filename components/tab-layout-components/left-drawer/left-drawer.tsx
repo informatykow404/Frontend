@@ -14,7 +14,7 @@ import { Text } from "@/components/ui/text";
 import React from "react";
 import { router } from "expo-router";
 
-import { leftDrawerStyles as styles } from "@/styles/TabLayoutStyles";
+import { styles } from "./styles"
 
 export default function LeftDrawer() {
   const [showDrawer, setShowDrawer] = React.useState(false);

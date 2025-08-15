@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { View, TouchableOpacity, Text } from "react-native";
-import { TabContext } from "@/contexts/TabContext";
-import { bottomBarStyles as styles } from "@/styles/TabLayoutStyles";
+import { TabContext } from "@/contexts/tab-context";
+import { styles } from "./styles"
 
 export default function BottomBar() {
   const { tab, setTab, pagerRef } = useContext(TabContext);

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ExternalLink } from "./ExternalLink";
+import { ExternalLink } from "./external-link";
 import { Box } from "@/components/ui/box";
 import { Text } from "@/components/ui/text";
 
