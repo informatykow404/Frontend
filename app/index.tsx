@@ -22,7 +22,7 @@ export default function OnBoard() {
           " bg-amber-200 justify-center items-center w-full min-h-[100.5vh]"
         }
       >
-        <Text className={"bg-amber-700 p-10 text-4xl "}>On board works </Text>
+        <Text className={"bg-amber-700 p-10 text-4xl "}></Text>
         <View className={"h-10 w-1/2 bg-amber-500 m-5"}>
           <Link href={"/(auth)/sign-in"} className={"text-center"}>
             Zaloguj sie - kliknij mnie
@@ -39,6 +39,12 @@ export default function OnBoard() {
           className={"h-10 w-1/2 bg-amber-500 text-center m-5 "}
         >
           Tabs - kliknij mnie
+        </Link>
+        <Link
+            href={"/(org)"}
+            className={"h-10 w-1/2 bg-amber-500 text-center m-5 "}
+        >
+          Koło - kliknij mnie
         </Link>
       </View>
     </ScrollView>
